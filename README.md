@@ -56,6 +56,10 @@ regalia({
 
 Arrays can’t contain objects.
 
+The dot notation in each symbol description
+is according to its path in the tree structure.
+Due to this, periods are not allowed anywhere.
+
 ### `Symbol.for()`
 
 **Not supported**. Pull request welcome.
