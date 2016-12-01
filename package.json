@@ -1,0 +1,36 @@
+{
+  "name": "regalia",
+  "version": "1.0.0",
+  "description": "Helps you make symbol trees",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "standard",
+    "unit": "ava ${CI:+--verbose}",
+    "coverage": "nyc npm run unit",
+    "test": "npm run lint && npm run coverage"
+  },
+  "author": "Shahar Or <mightyiampresence@gmail.com> (mightyiam)",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "lodash": "https://api.github.com/repos/lodash/lodash/tarball/a3e077324a187ff5002036dde70d1e20346c000f",
+    "mock-require": "^2.0.0",
+    "nyc": "^10.0.0",
+    "standard": "^8.6.0",
+    "symbol-description": "^1.0.0"
+  },
+  "nyc": {
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100,
+    "include": "**/*.js",
+    "exclude": "**/*.test.js",
+    "all": true,
+    "check-coverage": true
+  },
+  "dependencies": {
+    "array-to-hash": "^1.0.0",
+    "traverse": "^0.6.6"
+  }
+}
