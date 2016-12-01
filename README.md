@@ -51,10 +51,14 @@ regalia({
   a: ['foo'],
   b: ['foo']
 })
-// { a: { foo: Symbol(foo) }, b: { foo: Symbol(foo) } }
+// { a: { foo: Symbol(a.foo) }, b: { foo: Symbol(b.foo) } }
 ```
 
 Arrays can’t contain objects.
+
+The dot notation in each symbol description
+is according to its path in the tree structure.
+Due to this, periods are not allowed anywhere.
 
 ### `Symbol.for()`
 
