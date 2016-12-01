@@ -51,7 +51,7 @@ regalia({
   a: ['foo'],
   b: ['foo']
 })
-// { a: { foo: Symbol(foo) }, b: { foo: Symbol(foo) } }
+// { a: { foo: Symbol(a.foo) }, b: { foo: Symbol(b.foo) } }
 ```
 
 Arrays can’t contain objects.
