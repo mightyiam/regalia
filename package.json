@@ -1,6 +1,6 @@
 {
   "name": "regalia",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helps you make symbol trees",
   "main": "lib/index.js",
   "scripts": {
