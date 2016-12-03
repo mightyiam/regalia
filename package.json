@@ -32,5 +32,17 @@
   "dependencies": {
     "array-to-hash": "^1.0.0",
     "traverse": "^0.6.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mightyiam/regalia.git"
+  },
+  "keywords": [
+    "symbol",
+    "tree"
+  ],
+  "bugs": {
+    "url": "https://github.com/mightyiam/regalia/issues"
+  },
+  "homepage": "https://github.com/mightyiam/regalia#readme"
 }
