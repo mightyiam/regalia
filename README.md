@@ -60,6 +60,15 @@ The dot notation in each symbol description
 is according to its path in the tree structure.
 Due to this, periods are not allowed anywhere.
 
+### Test utilities
+
+- [equals-regalia](https://www.npmjs.com/package/equals-regalia):
+  deep equality check for regalia trees
+- [is-regalia](https://www.npmjs.com/package/is-regalia):
+  validate regalia trees
+- [regalia-reverse](https://www.npmjs.com/package/regalia-reverse):
+  reverses regalia trees back to input format
+
 ### `Symbol.for()`
 
 **Not supported**. Pull request welcome.
