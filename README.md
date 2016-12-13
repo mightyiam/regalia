@@ -6,17 +6,26 @@ Helps you make symbol trees
 
 Because we may like to use [symbols as constants](https://medium.com/@mightyiam/symbols-as-constants-25c79231a348#.y7pgqsifi).
 
-Or any other reason you may think of.
+Or perhaps you have a another use for symbol trees.
 
-Yet, there is some repetition:
+Yet, in writing symbol trees yourself, there may be some repetition:
 
 ```js
 const constants = {
-  // there is no syntax to infer the symbol description from the key
-  // or from anything else, so we repeat ourselves:
   doNotRepeatYourself: Symbol('doNotRepeatYourself')
 }
 ```
+
+Unlike [function names](http://www.2ality.com/2015/09/function-names-es6.html)
+there is no syntax to infer the symbol description from the key.
+
+This library provides a convenient API
+for making symbol trees
+and also some testing utilities.
+
+Also:
+- sensible symbol descriptions
+- testing utilities (see below)
 
 ## How?
 
@@ -26,7 +35,7 @@ regalia(['foo'])
 // { foo: Symbol(foo) }
 ```
 
-Symbols are created using `Symbol()`.
+Symbols are created using `Symbol()` (not `Symbol.for()`).
 
 The input is composed of arrays that contain strings.
 Each array will be transformed into an object,
@@ -69,11 +78,14 @@ Due to this, periods are not allowed anywhere.
 - [regalia-reverse](https://www.npmjs.com/package/regalia-reverse):
   reverses regalia trees back to input format
 
-### `Symbol.for()`
+## Why not `Symbol.for()`?
 
-**Not supported**. Pull request welcome.
-Suggested API:
+The theoretical benefit of symbols,
+as opposed to [`Symbol.for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/for)s,
+is that references to them cannot be obtained
+anywhere but where they were created.
+They must be exported or passed on
+in order for them to reach another module.
 
-```js
-const regaliaFor = require('regalia').for // NOT SUPPORTED
-```
+`Symbol.for` symbols can be re-obtained *anywhere*
+by calling with the same identifier.
