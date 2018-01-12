@@ -14,7 +14,7 @@
   "devDependencies": {
     "ava": "^0.24.0",
     "lodash": "https://api.github.com/repos/lodash/lodash/tarball/a3e077324a187ff5002036dde70d1e20346c000f",
-    "mock-require": "^2.0.0",
+    "mock-require": "^3.0.0",
     "nyc": "^11.0.3",
     "nyc-config-100": "^1.0.1",
     "standard": "^10.0.3",
