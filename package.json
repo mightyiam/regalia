@@ -12,7 +12,7 @@
   "author": "Shahar Or <mightyiampresence@gmail.com> (mightyiam)",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^0.25.0",
+    "ava": "^1.0.1",
     "lodash": "https://api.github.com/repos/lodash/lodash/tarball/a3e077324a187ff5002036dde70d1e20346c000f",
     "mock-require": "^3.0.2",
     "nyc": "^13.1.0",
