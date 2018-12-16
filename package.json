@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "standard",
-    "unit": "ava ${CI:+--verbose}",
+    "unit": "ava",
     "coverage": "nyc npm run unit",
     "test": "npm run lint && npm run coverage"
   },
