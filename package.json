@@ -12,10 +12,10 @@
   "author": "Shahar Or <mightyiampresence@gmail.com> (mightyiam)",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^1.0.1",
+    "ava": "^1.4.1",
     "lodash": "https://api.github.com/repos/lodash/lodash/tarball/a3e077324a187ff5002036dde70d1e20346c000f",
-    "mock-require": "^3.0.2",
-    "nyc": "^13.1.0",
+    "mock-require": "^3.0.3",
+    "nyc": "^13.3.0",
     "nyc-config-100": "^1.0.1",
     "standard": "^12.0.1",
     "symbol-description": "^1.0.0"
