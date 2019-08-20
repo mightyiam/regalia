@@ -12,10 +12,14 @@
   "author": "Shahar Or <mightyiampresence@gmail.com> (mightyiam)",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^2.1.0",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@commitlint/travis-cli": "^8.1.0",
+    "ava": "^2.3.0",
+    "husky": "^2.7.0",
     "lodash": "https://api.github.com/repos/lodash/lodash/tarball/a3e077324a187ff5002036dde70d1e20346c000f",
     "mock-require": "^3.0.3",
-    "nyc": "^14.0.0",
+    "nyc": "^14.1.1",
     "nyc-config-100": "^1.0.1",
     "standard": "^14.0.0",
     "symbol-description": "^1.0.0"
@@ -23,7 +27,10 @@
   "nyc": {
     "extends": "nyc-config-100",
     "include": "**/*.js",
-    "exclude": "**/*.test.js"
+    "exclude": [
+      "**/*.test.js",
+      "commitlint.config.js"
+    ]
   },
   "dependencies": {
     "array-to-hash": "^1.0.0",
@@ -39,6 +46,12 @@
   ],
   "bugs": {
     "url": "https://github.com/mightyiam/regalia/issues"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm test"
+    }
   },
   "homepage": "https://github.com/mightyiam/regalia#readme"
 }
