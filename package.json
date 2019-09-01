@@ -16,7 +16,7 @@
     "@commitlint/config-conventional": "^8.1.0",
     "@commitlint/travis-cli": "^8.1.0",
     "ava": "^2.3.0",
-    "husky": "^2.7.0",
+    "husky": "^3.0.5",
     "lodash": "https://api.github.com/repos/lodash/lodash/tarball/a3e077324a187ff5002036dde70d1e20346c000f",
     "mock-require": "^3.0.3",
     "nyc": "^14.1.1",
